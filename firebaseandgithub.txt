@@ -1,7 +1,0 @@
-Para desplegar debes actualizar los archivos dentro de public y ya
-Los archivos fuera de public son residuos
-Luego Ejecutar:
-
-firebase login
-
-firebase deploy
