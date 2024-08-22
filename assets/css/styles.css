@@ -6,10 +6,37 @@
     */
 /* COLOR SCHEME --- anthondev.com */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
-
+.profilePicture{
+  border-radius: 100%;
+  width: 120px;
+  margin-bottom: 10px;
+}
+.titleDate{
+  display: flex;
+  gap: 12px;
+  justify-items: center;
+}
+.periodDates{
+  font-size: 1.3rem;
+  color: #646363;
+}
+.profilePicture:hover{
+  box-shadow: 0 3px 45px rgba(8, 8, 55, 0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.resume{
+  margin-top: 10px;
+  width: 620px;
+  line-height: 32px;
+  font-weight: 500 !important;
+  font-size: 1.3rem !important;
+  font-family: "Onest", sans-serif;
+}
+.highlight{
+  color: #0abb59;
+}
 .h-wrapper {
   height: 100vh;
-  background: url("../img/code.jpg");
+  background: url("../img/react.jpg");
   background-size: cover;
   background-attachment: fixed;
   z-index: -1;
@@ -20,7 +47,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(119.11deg, #12c459e8 10.18%, rgba(13, 50, 146, 0.96) 90.78%);
+  background: linear-gradient(119.11deg, #02133ed0 10.18%, rgba(1, 9, 26, 0.96) 90.78%);
+  /* background: linear-gradient(119.11deg, #022415d0 10.18%, rgba(1, 9, 26, 0.96) 90.78%); */
+  
   z-index: 1;
   width: 100%;
   height: 100vh;
@@ -66,22 +95,22 @@
 }
 
 .h-row .h-title {
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .h-row .Strokeme {
   color: whitesmoke;
   font-weight: 800;
   font-size: 900;
-  font-size: 3.8rem;
+  font-size: 3.2rem;
 }
 
 .h-row .Subtitle {
-  font-weight: lighter;
   color: whitesmoke;
-  font-weight: 100;
-  font-size: 1.5em;
+  font-weight: 200;
+  font-size: 1.65em;
   letter-spacing: -1px;
+
 }
 
 .vl {
@@ -150,7 +179,7 @@ body {
   position: absolute;
   list-style: none;
   display: block;
-  background-color: rgba(231, 237, 245, 0.15);
+  background-color: rgba(84, 82, 82, 0.15);
   top: -100px;
   animation: circle 15s infinite;
   transition-timing-function: linear;
@@ -254,6 +283,13 @@ body {
   height: auto;
 }
 
+.next{
+  width: 1000px;
+  height: 200px;
+}
+.next:hover{
+  color: #058c42;
+}
 .nav .logo a {
   text-decoration: none;
   color: white;
@@ -385,18 +421,18 @@ body {
     width: 100%;
     font-size: 4vw;
     font-family: "Montserrat";
-    color: white;
+    color: whitesmoke;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 100px;
+    margin-top: 10px;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .nav div.main_list ul li a:hover {
     text-align: center;
     width: 100%;
-    background: white;
-    color: black;
+    color: rgb(138, 138, 138);
   }
 
   .nav div.media_button {
@@ -832,11 +868,16 @@ body {
   border-radius: 3px;
   background-position: center;
 }
-
+.positionName{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #b6b6b6;
+}
 .projectList .projectDescription {
-  padding: 3em 0em !important;
   border-radius: 0 5px 5px 0;
   transition: 0.5s;
+  cursor: pointer;
+  background-image: linear-gradient(to right bottom, #121212, #161616, #1b1919, #1e1d1c, #21211f);
 }
 
 @media (min-width: 992px) {
@@ -853,12 +894,17 @@ body {
 }
 
 .projectList .skillsSet .skill {
-  border: 1px solid white;
+  border: 1.5px solid white;
   border-radius: 100px;
   display: inline-block;
   margin: 1px;
-  font-size: 0.78rem;
-  padding: 3px 7px;
+  font-weight: 400;
+  font-size: .8rem;
+  padding: 4px 7px;
+}
+
+.projectList .skillsSet .skill:hover {
+  background: #0abb59;
 }
 
 .three-dots {
@@ -904,7 +950,11 @@ body {
   width: 100px;
   border: 0px solid white;
 }
-
+@media (max-width: 602px) {
+  .resume{
+    width: 400px;
+  }
+}
 @media (min-width: 992px) {
   .skillsSection .wrapperSkill {
     border: 0px solid white;
@@ -1066,6 +1116,7 @@ body {
   font-size: 1rem;
 }
 
+
 #bSISS {
   position: absolute;
   top: 250px;
@@ -1198,13 +1249,16 @@ body {
 
 .footer {
   padding-left: 10%;
-  height: 50vh;
-  padding-top: 10%;
-  background: #12c459;
-  background: linear-gradient(0deg, rgba(18, 196, 89, 1) 0%, rgba(9, 15, 32, 1) 0%);
-  padding-right: 10%;
+  font-family: "Onest", sans-serif;
+  
+  background: #091460;
+  padding: 8em 15em;
 }
+.footer p {
+  font-size: 1.2rem;
+  font-family: "Onest", sans-serif;
 
+}
 .footer .footerMsg {
   font-size: 3rem;
   font-weight: 800;
@@ -1222,7 +1276,7 @@ body {
 }
 
 body {
-  background: #020202;
+  background: #0d0d0d;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
