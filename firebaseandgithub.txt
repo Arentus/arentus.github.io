@@ -1,7 +1,6 @@
-Para desplegar debes actualizar los archivos fuera de la carpeta public 
-y reemplazar todo posteriormente
-
-Ejecutar:
+Para desplegar debes actualizar los archivos dentro de public y ya
+Los archivos fuera de public son residuos
+Luego Ejecutar:
 
 firebase login
 
