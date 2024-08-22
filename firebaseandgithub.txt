@@ -1,2 +1,8 @@
-Debes actualizar los archivos fuera de public 
-y luego reemplazar todos los archivos en public una vez terminado y hacer deploy
+Para desplegar debes actualizar los archivos fuera de la carpeta public 
+y reemplazar todo posteriormente
+
+Ejecutar:
+
+firebase login
+
+firebase deploy
